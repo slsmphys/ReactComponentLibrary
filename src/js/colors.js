@@ -1,0 +1,41 @@
+const baseColors = {
+  black: "#000000",
+  white: "#ffffff",
+  grey50: "#fafafa",
+  grey100: "#f5f5f5",
+  grey200: "#eeeeee",
+  grey300: "#e0e0e0",
+  grey400: "#bdbdbd",
+  grey500: "#9e9e9e",
+  grey600: "#757575",
+  grey700: "#616161",
+  grey800: "#424242",
+  grey900: "#212121",
+  red: "#e74c3c",
+  orange: "#f39c12",
+  yellow: "#f1c40f",
+  green: "#2ecc71",
+  blue: "#3498db",
+  pickledBlue: "#2c3e50",
+  silverSand: "#bdc3c7",
+  darkRed: "#c0392b",
+  darkGreen: "#27ae60",
+  darkBlue: "#2980b9",
+};
+
+const colors = {
+  white: baseColors.white,
+  black: baseColors.black,
+  textLight: baseColors.silverSand,
+  textDark: baseColors.pickledBlue,
+  grey: baseColors.athensGrey,
+  positiveAccent: baseColors.darkGreen,
+  positiveAccentLight: baseColors.green,
+  negativeAccent: baseColors.darkRed,
+  negativeAccentLight: baseColors.red,
+  informationAccent: baseColors.darkBlue,
+  informationAccentLight: baseColors.blue,
+  warningAccent: baseColors.yellow,
+};
+
+export default colors;

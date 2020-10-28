@@ -1,2 +1,3 @@
 # ReactComponentLibrary
-My React Component Pattern Library
+
+React Component Pattern Library for my Applications
