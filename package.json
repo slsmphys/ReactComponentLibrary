@@ -1,5 +1,5 @@
 {
-  "name": "ReactPatternLibrary",
+  "name": "ReactComponentLibrary",
   "version": "0.0.1",
   "description": "Component Pattern Library for my React.js apps",
   "main": "index.js",
@@ -15,6 +15,7 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.21.2",
@@ -23,6 +24,7 @@
     "eslint-plugin-react-hooks": "^4.0.0",
     "html-webpack-plugin": "^4.0.1",
     "prettier": "2.1.2",
+    "style-loader": "^2.0.0",
     "webpack": "^4.42.1",
     "webpack-dev-server": "^3.11.0"
   },

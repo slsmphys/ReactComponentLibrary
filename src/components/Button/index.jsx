@@ -14,7 +14,7 @@ const Button = ({
   onClick,
 }) => {
   const handleClick = () => onClick();
-
+  
   return (
     <ButtonStyled
       className={className}
