@@ -2,121 +2,103 @@ import React from "react";
 
 import Button from "../components/Button";
 
-const ButtonDemo = (
+const ButtonDemo = () => (
     <div>
-      <h1>Buttons Demo</h1>
-      <h2>Solid Buttons</h2>
-      <Button
-          text="Success"
-          contextType="positive"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="Failure"
-          contextType="negative"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="More"
-          contextType="info"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="System"
-          contextType="system"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="Disabled"
-          contextType="positive"
-          onClick={() => alert("Clicked")}
-          isDisabled={true}
-      />
-      <Button
-          text="Rounded"
-          contextType="positive"
-          onClick={() => alert("Clicked")}
-          hasRoundedCorners={true}
-      />
-      <h2>Outlined Buttons</h2>
-      <Button
-          text="Success"
-          styledAs="outlined"
-          contextType="positive"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="Failure"
-          styledAs="outlined"
-          contextType="negative"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="More"
-          styledAs="outlined"
-          contextType="info"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="System"
-          styledAs="outlined"
-          contextType="system"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="Disabled"
-          styledAs="outlined"
-          contextType="positive"
-          onClick={() => alert("Clicked")}
-          isDisabled={true}
-      />
-      <Button
-          text="Rounded"
-          styledAs="outlined"
-          contextType="positive"
-          onClick={() => alert("Clicked")}
-          hasRoundedCorners={true}
-      />
-      <h2>Text Buttons</h2>
-      <Button
-          text="Success"
-          styledAs="text"
-          contextType="positive"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="Failure"
-          styledAs="text"
-          contextType="negative"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="More"
-          styledAs="text"
-          contextType="info"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="System"
-          styledAs="text"
-          contextType="system"
-          onClick={() => alert("Clicked")}
-      />
-      <Button
-          text="Disabled"
-          styledAs="text"
-          contextType="positive"
-          onClick={() => alert("Clicked")}
-          isDisabled={true}
-      />
-      <Button
-          text="Rounded"
-          styledAs="text"
-          contextType="positive"
-          onClick={() => alert("Clicked")}
-          hasRoundedCorners={true}
-      />
-  </div>
+        <h1>Buttons Demo</h1>
+        <h2>Solid Buttons</h2>
+        <Button
+            text="Success"
+            styledAs="positive"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="Failure"
+            styledAs="negative"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="More"
+            styledAs="information"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="System"
+            styledAs="system"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="Disabled"
+            styledAs="positive"
+            onClick={() => alert("Clicked")}
+            isDisabled={true}
+        />
+
+        <h2>Outlined Buttons</h2>
+        <Button
+            text="Success"
+            buttonType="outlined"
+            styledAs="positive"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="Failure"
+            buttonType="outlined"
+            styledAs="negative"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="More"
+            buttonType="outlined"
+            styledAs="information"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="System"
+            buttonType="outlined"
+            styledAs="system"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="Disabled"
+            buttonType="outlined"
+            styledAs="positive"
+            onClick={() => alert("Clicked")}
+            isDisabled={true}
+        />
+
+        <h2>Text Buttons</h2>
+        <Button
+            text="Success"
+            buttonType="text"
+            styledAs="positive"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="Failure"
+            buttonType="text"
+            styledAs="negative"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="More"
+            buttonType="text"
+            styledAs="information"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="System"
+            buttonType="text"
+            styledAs="system"
+            onClick={() => alert("Clicked")}
+        />
+        <Button
+            text="Disabled"
+            buttonType="text"
+            styledAs="positive"
+            onClick={() => alert("Clicked")}
+            isDisabled={true}
+        />
+    </div>
 );
 
 export default ButtonDemo;
