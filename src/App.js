@@ -1,11 +1,10 @@
-import React, {Fragment} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 
-import previews from "./previews/previews";
+import "./index.css";
 
-const App = () => (
-	<Fragment>
-		{previews.buttonDemo}
-	</Fragment>);
+import previews from "./previews/index";
+
+const App = previews.buttonDemo;
 
 ReactDOM.render(<App />, document.getElementById("root"));

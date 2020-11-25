@@ -9,32 +9,33 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader"
-                }
+                    loader: "babel-loader",
+                },
             },
             {
                 test: /\.css$/,
-                use: [
-                  'style-loader',
-                  'css-loader',
-                ],
-              },
+                use: [{ loader: "style-loader" }, { loader: "css-loader" }],
+            },
             {
                 test: /\.(woff|woff2)$/,
                 use: [
-                  'file-loader',
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[name].[ext]",
+                            outputPath: "fonts/",
+                        },
+                    },
                 ],
-              },
-        ]
+            },
+        ],
     },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js"
+        filename: "bundle.js",
     },
-    plugins: [
-        new HtmlWebpackPlugin({ template: "./src/index.html"})
-    ],
+    plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
     resolve: {
-        extensions: [".js", ".jsx", ".json"]
-    }
+        extensions: [".js", ".jsx", ".json"],
+    },
 };
