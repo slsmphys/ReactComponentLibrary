@@ -1,15 +1,19 @@
 import setup from "../../js/setup";
 
+const { typography } = setup;
+
+console.log(typography);
+
 const theme = {
     iconSizeMobile: {
-        small: setup.typography.mobile.smallText,
-        medium: setup.typography.mobile.bodyText,
-        large: setup.typography.mobile.largeText,
+        small: typography.mobile.iconSmall,
+        medium: typography.mobile.iconRegular,
+        large: typography.mobile.iconLarge,
     },
     iconSizeDesktop: {
-        small: setup.typography.desktop.smallText,
-        medium: setup.typography.desktop.bodyText,
-        large: setup.typography.desktop.largeText,
+        small: typography.desktop.iconSmall,
+        medium: typography.desktop.iconRegular,
+        large: typography.desktop.iconLarge,
     },
 };
 

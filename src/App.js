@@ -3,8 +3,13 @@ import ReactDOM from "react-dom";
 
 import "./index.css";
 
-import previews from "./previews/index";
+import {
+    iconWithTextDemo,
+    inlineNotificationDemo,
+    buttonDemo,
+    newButtonDemo,
+} from "./js/demos";
 
-const App = previews.buttonDemo;
+const App = buttonDemo;
 
 ReactDOM.render(<App />, document.getElementById("root"));

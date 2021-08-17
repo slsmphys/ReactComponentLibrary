@@ -1,16 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import IconStyled from "./IconStyled";
+import { getIcon } from "../../js/utilities";
 
-const Icon = ({ className, icon, size }) => (
-    <IconStyled
-        className={className}
-        icon={icon}
-        size={size}
-        aria-hidden="true"
-    />
-);
+const Icon = ({ className, icon }) => {
+    const SelectedIcon = getIcon(icon);
+
+    return <SelectedIcon className={className} aria-hidden="true" />;
+};
 
 Icon.defaultProps = {
     className: "icon",
@@ -20,7 +17,6 @@ Icon.defaultProps = {
 Icon.propTypes = {
     className: PropTypes.string,
     icon: PropTypes.string.isRequired,
-    size: PropTypes.oneOf(["small", "medium", "large"]),
 };
 
 export default Icon;

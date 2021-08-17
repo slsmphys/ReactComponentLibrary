@@ -1,5 +1,6 @@
-import colors from "../../js/colors";
-import fontweight, { fontstack1 } from "../../js/fonts.js"
+import setup from "../../js/setup";
+
+const { colors } = setup;
 
 const theme = {
     borderWidth: ".1rem",

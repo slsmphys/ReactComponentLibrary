@@ -1,5 +1,6 @@
-import colors from "../../js/colors";
-import fonts from "../../js/fonts.js";
+import setup from "../../js/setup";
+
+const { colors, fonts } = setup;
 
 const { fontFamilies, fontWeights } = fonts;
 

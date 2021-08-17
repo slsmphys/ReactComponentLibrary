@@ -1,8 +1,8 @@
-//const fontstack1 = `roboto, arial, helvetica, sans-serif`;
+const fallbackFonts = `Arial, Helvetica, sans-serif`;
 
 const fonts = {
     fontFamilies: {
-        stack1: "'roboto', Arial",
+        stack1: "'roboto-regular', Arial",
     },
     fontWeights: {
         light: 300,
@@ -10,6 +10,8 @@ const fonts = {
         medium: 500,
         bold: 700,
     },
+
+    primary: `"Roboto"`,
 };
 
 export default fonts;
